@@ -1,0 +1,33 @@
+.photosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.photoCard {
+  background: rgba(255,255,255,0.05);
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.videosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.videoCard {
+  background: #111;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
