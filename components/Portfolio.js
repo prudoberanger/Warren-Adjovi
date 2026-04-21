@@ -1,0 +1,72 @@
+import { useState, useRef } from 'react';
+import styles from './Portfolio.module.css';
+
+const carousel1 = [
+  'https://www.youtube.com/embed/ZAgBr3FEHm4',
+  'https://www.youtube.com/embed/yYQHUSB1EY4',
+  'https://www.youtube.com/embed/jPFu1jl2PhM',
+  'https://www.youtube.com/embed/Zl8gcGZG8ec',
+];
+
+const carousel2 = [
+  'https://www.youtube.com/embed/fB5t3vlxNgo',
+  'https://www.youtube.com/embed/7-YbJzWijfo',
+  'https://www.youtube.com/embed/S675Ssb-48c',
+  'https://www.youtube.com/embed/_nYNKs9ph6c',
+];
+
+function Carousel({ videos }) {
+  const [idx, setIdx] = useState(0);
+
+  const go = (i) => {
+    setIdx((i + videos.length) % videos.length);
+  };
+
+  return (
+    <div className={styles.carousel}>
+      <div className={styles.track} style={{ transform: `translateX(-${idx * 100}%)` }}>
+        {videos.map((src, i) => (
+          <div key={i} className={styles.slide}>
+            <iframe
+              src={i === idx ? src : ''}
+              allowFullScreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            />
+          </div>
+        ))}
+      </div>
+      <button className={`${styles.arr} ${styles.prev}`} onClick={() => go(idx - 1)}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" width="20" height="20"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button className={`${styles.arr} ${styles.next}`} onClick={() => go(idx + 1)}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" width="20" height="20"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div className={styles.dots}>
+        {videos.map((_, i) => (
+          <button key={i} className={`${styles.dot} ${i === idx ? styles.active : ''}`} onClick={() => go(i)} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function Portfolio() {
+  return (
+    <section id="portfolio" className={styles.section}>
+      <div className="container">
+        <div className={styles.header}>
+          <div className="stag">
+            <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            Portfolio
+          </div>
+          <h2 className="sh">Mes <em>Réalisations</em></h2>
+          <p className="sp">Des vidéos pensées pour captiver, retenir et convertir — à chaque seconde.</p>
+        </div>
+        <Carousel videos={carousel1} />
+        <div style={{ marginTop: 24 }}>
+          <Carousel videos={carousel2} />
+        </div>
+      </div>
+    </section>
+  );
+}
