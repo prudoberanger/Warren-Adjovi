@@ -2,17 +2,7 @@ import { useState, useRef } from 'react';
 import styles from './Portfolio.module.css';
 
 const carousel1 = [
-  'https://www.youtube.com/embed/ZAgBr3FEHm4',
   'https://www.youtube.com/embed/yYQHUSB1EY4',
-  'https://www.youtube.com/embed/jPFu1jl2PhM',
-  'https://www.youtube.com/embed/Zl8gcGZG8ec',
-];
-
-const carousel2 = [
-  'https://www.youtube.com/embed/fB5t3vlxNgo',
-  'https://www.youtube.com/embed/7-YbJzWijfo',
-  'https://www.youtube.com/embed/S675Ssb-48c',
-  'https://www.youtube.com/embed/_nYNKs9ph6c',
 ];
 
 function Carousel({ videos }) {
