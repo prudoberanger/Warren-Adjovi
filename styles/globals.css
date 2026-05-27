@@ -23,7 +23,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background: var(--white);
+  background: var(--black);
   color: var(--gray-800);
   line-height: 1.5;
   overflow-x: hidden;
