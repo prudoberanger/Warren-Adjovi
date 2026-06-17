@@ -11,15 +11,15 @@
   text-align: center; transition: all 0.3s;
 }
 .statCard:hover {
-  background: var(--orange-l);
+  background: var(--green-l);
   border-color: var(--gb);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(249,115,22,0.12);
+  box-shadow: 0 16px 40px rgba(16,185,129,0.12);
 }
 .statNum {
   font-size: clamp(34px, 3.8vw, 52px);
   font-weight: 800; line-height: 1;
-  color: var(--orange); margin-bottom: 8px;
+  color: var(--green); margin-bottom: 8px;
 }
 .statLabel {
   font-size: 13px; font-weight: 500;

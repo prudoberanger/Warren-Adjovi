@@ -29,7 +29,7 @@
 .question svg {
   width: 18px;
   height: 18px;
-  stroke: var(--orange);
+  stroke: var(--green);
   flex-shrink: 0;
   transition: transform 0.3s;
 }

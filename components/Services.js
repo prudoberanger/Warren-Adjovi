@@ -23,7 +23,7 @@ export default function Services() {
   return (
     <section id="services" className="section">
       <div className="container">
-        <h2 className="section-title" style={{textAlign: 'center'}}>Mes <span style={{color: 'var(--orange)'}}>Services</span></h2>
+        <h2 className="section-title" style={{textAlign: 'center'}}>Mes <span style={{color: 'var(--green)'}}>Services</span></h2>
         <p className="section-subtitle">Des prestations adaptées à chaque format, chaque plateforme, chaque objectif.</p>
         <div className={styles.grid}>
           {services.map((s, i) => (

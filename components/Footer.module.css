@@ -1,6 +1,6 @@
 .footer {
-  background: #0A0A0A;
-  color: white;
+  background: white;
+  color: var(--gray-800);
   padding: 48px 0 24px;
 }
 .top {
@@ -16,7 +16,7 @@
   font-weight: 800;
 }
 .logo span {
-  color: var(--orange);
+  color: var(--green);
 }
 .links {
   display: flex;
@@ -28,7 +28,7 @@
   transition: color 0.2s;
 }
 .links a:hover {
-  color: var(--orange);
+  color: var(--green);
 }
 .bottom {
   display: flex;
@@ -50,7 +50,7 @@
   transition: color 0.2s;
 }
 .socials a:hover {
-  color: var(--orange);
+  color: var(--green);
 }
 @media (max-width: 768px) {
   .top {

@@ -23,7 +23,7 @@ export default function Testimonials() {
     <section id="testimonials" className="section section-dark">
       <div className="container">
         <h2 className="section-title" style={{ color: 'white', textAlign: 'center' }}>
-          Ils <span style={{ color: 'var(--orange)' }}>m'ont fait confiance</span>
+          Ils <span style={{ color: 'var(--green)' }}>m'ont fait confiance</span>
         </h2>
         <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Découvrez ce que mes clients pensent de mon travail.

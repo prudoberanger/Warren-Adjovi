@@ -29,7 +29,7 @@ export default function About() {
             </div>
           </div>
           <div className={styles.text}>
-            <h2 className="section-title">Je suis <span style={{color: 'var(--orange)'}}>Warren ADJOVI</span></h2>
+            <h2 className="section-title">Je suis <span style={{color: 'var(--green)'}}>Warren ADJOVI</span></h2>
             <p>Monteur vidéo spécialisé dans la création de contenus qui retiennent l'attention et convertissent. Mon approche : allier <strong>storytelling dynamique</strong> et techniques modernes pour que chaque seconde joue un rôle précis.</p>
             <p>Pas des vidéos jolies mais vides. Des vidéos qui <strong>performent.</strong></p>
             <div className={styles.chips}>

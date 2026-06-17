@@ -26,7 +26,7 @@
 .card:hover {
   border-color: var(--gb);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(249,115,22,0.12);
+  box-shadow: 0 16px 40px rgba(16,185,129,0.12);
 }
 .stars { display: flex; gap: 2px; margin-bottom: 12px; }
 .text { font-size: 13px; color: var(--gray-500); line-height: 1.7; margin-bottom: 16px; font-style: italic; }

@@ -29,7 +29,7 @@
   letter-spacing: -0.5px;
 }
 .logo span {
-  color: var(--orange);
+  color: var(--green);
 }
 .links {
   display: flex;
@@ -42,17 +42,17 @@
   transition: color 0.2s;
 }
 .links a:hover {
-  color: var(--orange);
+  color: var(--green);
 }
 .cta {
-  background: var(--orange);
+  background: var(--green);
   color: white !important;
   padding: 8px 20px;
   border-radius: 40px;
   transition: background 0.2s;
 }
 .cta:hover {
-  background: var(--orange-h);
+  background: var(--green-h);
 }
 .hamburger {
   display: none;
